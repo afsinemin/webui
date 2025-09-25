@@ -1,0 +1,21 @@
+<div class="cards">
+  <div class="scroll-window">
+    <spdk-subsystem-details-card
+      [subsystem]="subsystem()"
+      [ixUiSearch]="searchableElements.elements.detailsCard"
+      (nameUpdated)="nameUpdated.emit($event)"
+    ></spdk-subsystem-details-card>
+    <spdk-subsystem-namespaces-card
+      [subsystem]="subsystem()"
+      [ixUiSearch]="searchableElements.elements.namespacesCard"
+    ></spdk-subsystem-namespaces-card>
+    <spdk-subsystem-ports-card
+      [subsystem]="subsystem()"
+      [ixUiSearch]="searchableElements.elements.portsCard"
+    ></spdk-subsystem-ports-card>
+    <spdk-subsystem-hosts-card
+      [subsystem]="subsystem()"
+      [ixUiSearch]="searchableElements.elements.hostsCard"
+    ></spdk-subsystem-hosts-card>
+  </div>
+</div>

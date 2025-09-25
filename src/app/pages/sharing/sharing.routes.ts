@@ -68,6 +68,11 @@ export const sharingRoutes: Routes = [
         data: { title: T('NVMe-oF'), breadcrumb: null },
         loadChildren: () => import('app/pages/sharing/nvme-of/nvme-of.routes').then((module) => module.nvmeOfRoutes),
       },
+       {
+        path: 'spdk',
+        data: { title: T('SPDK'), breadcrumb: null },
+        loadChildren: () => import('app/pages/sharing/spdk/spdk.routes').then((module) => module.spdkRoutes),
+      },
     ],
   },
 ];

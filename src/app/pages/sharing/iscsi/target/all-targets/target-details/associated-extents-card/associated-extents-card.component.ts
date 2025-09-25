@@ -62,7 +62,7 @@ export class AssociatedExtentsCardComponent {
 
   readonly unassociatedExtents = computed(() => {
     return this.extents().filter((extent) => {
-      return !this.targetExtents().some((targetExtent) => targetExtent.extent === extent.id);
+      return !this.mappedTargetExtents().some((targetExtent) => targetExtent.extent === extent.id);
     });
   });
 

@@ -86,8 +86,13 @@ export enum Role {
   SharingIscsiTargetRead = 'SHARING_ISCSI_TARGET_READ',
   SharingIscsiTargetWrite = 'SHARING_ISCSI_TARGET_WRITE',
   SharingIscsiWrite = 'SHARING_ISCSI_WRITE',
+
   SharingNvmeTargetRead = 'SHARING_NVME_TARGET_READ',
   SharingNvmeTargetWrite = 'SHARING_NVME_TARGET_WRITE',
+
+  SharingSPDKTargetRead = 'SHARING_NVME_TARGET_READ',
+  SharingSPDKTargetWrite = 'SHARING_NVME_TARGET_WRITE',
+
   SharingFtpRead = 'SHARING_FTP_READ',
   SharingFtpWrite = 'SHARING_FTP_WRITE',
   SharingAdmin = 'SHARING_ADMIN',
